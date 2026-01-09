@@ -1,8 +1,6 @@
 import numpy as np
 
-ages = [22,25,34,22,13,34,11,18,17,24,48,30,29,40,33,27,38,26,29,19]
+ages = [5,31,43,48,50,41,7,11,15,39,80,82,32,2,8,6,25,36,27,61,31]
 
-#studying percentile: bách phân vị
-ages_40 = np.percentile(ages, 40)
-
-print (ages_40)
+ages_per = np.percentile(ages, 90)
+print (ages_per)
