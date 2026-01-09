@@ -1,5 +1,5 @@
 #in this code, we learn about data distribution and histograms using numpy and matplotlib
-import numpy as 
+import numpy as np
 import matplotlib.pyplot as plt
 
 x = np.random.uniform(0.0, 5.0, 250)
