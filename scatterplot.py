@@ -6,7 +6,7 @@ x = np.random.normal (5.0, 1.0, 100000)
 y = np.random.normal (10.0, 2.0, 100000)
 
 
-slope, intercept, r, p, std_err = stats.lingress(x, y)
+slope, intercept, r, p, std_err = stats.linregress(x, y)
 
 def lingress(x, slope, intercept):
     return slope*x + intercept
