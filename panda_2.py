@@ -3,5 +3,8 @@
 import pandas as pd
 
 df = pd.read_csv('data.csv')
+X = df[['Model', 'Volume']]
+y = df['CO2']
 
-print(df)
+print(X)
+print(y)
