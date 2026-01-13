@@ -1,10 +1,13 @@
-#We will learn about file importing in pandas
-
 import pandas as pd
+from sklearn.linear_model import LinearRegression
 
 df = pd.read_csv('data.csv')
-X = df[['Model', 'Volume']]
+
+X = df[['Weight', 'Volume']]
 y = df['CO2']
 
-print(X)
-print(y)
+model1 = LinearRegression()
+model1.fit(X, y)
+
+r1 = model1.predict([[2300, 1300]])
+print (r1)
