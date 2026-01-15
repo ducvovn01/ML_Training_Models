@@ -3,11 +3,11 @@ from sklearn.linear_model import Ridge
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 import pandas as pd
-import sklearn.datasets as fetch_california_housing
+from sklearn.datasets import fetch_california_housing
 
 
 #Loading dataset
-df = fetch_california_housing(as_frame = True)
+df = fetch_california_housing()
 X = df.data
 y = df.target
 
